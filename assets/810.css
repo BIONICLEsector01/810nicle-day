@@ -1,0 +1,307 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2017 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      FontSite Inc.
+ * License URL: https://www.fontspring.com/licenses/fontsite/webfont
+ *
+ *
+ */
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Franklin Gothic Book";
+  src: local("Franklin Gothic Book"),
+       url("biosector01.com/resources/fonts/franklingothic-book-webfont.woff2") format("woff2"),
+       url("biosector01.com/resources/fonts/franklingothic-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i');
+
+body {
+	background: #fafafa; /* #d7ebeb;*/
+	color: #272933;
+	margin: 0;
+	padding: 0;
+	/* font-family: "Franklin Gothic Book", "Helvetica Neue", sans-serif; */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+	background: linear-gradient(135deg,rgba(156,203,203,0.2) 15%,rgba(156,203,203,0.2) 75%) no-repeat center center fixed,#9ccbcb url(https://biosector01.com/images/bs01-light-bg.jpg) no-repeat center center fixed;
+	background-size: cover,cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: normal;
+	font-family: Lato, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-weight: normal;
+}
+
+#hero {
+	/* background: #9ccbcb url(https://biosector01.com/images/bs01-light-bg.jpg) no-repeat top center fixed; */
+	/* background-size: cover; */
+	margin: 0;
+	padding: 0.5em;
+}
+
+#header-810 {
+	text-align: center;
+	font-size: 1.5em;
+	font-family: Lato, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-weight: normal;
+}
+
+#header-810-lead {
+	padding-bottom: 0.5em;
+}
+
+#schedule-wrapper {
+	background-color: rgba(250, 250, 250, 0.7);
+	padding: 1em;
+}
+
+#schedule {
+	display: grid;
+	grid-gap: 0.5em;
+	gap: 0.5em;
+	grid-template-rows:
+		[time-1000] 1fr
+		[time-1030] 1fr
+		[time-1100] 1fr
+		[time-1130] 1fr
+		[time-1200] 1fr
+		[time-1230] 1fr
+		[time-1300] 1fr
+		[time-1330] 1fr
+		[time-1400] 1fr
+		[time-1430] 1fr
+		[time-1500] 1fr
+		[time-1530] 1fr
+		[time-1600] 1fr
+		[time-1630] 1fr
+		[time-1700] 1fr
+		[time-1730] 1fr
+		[time-1800] 1fr
+		[time-1830] 1fr
+		[time-1900] 1fr;
+	grid-template-columns:
+		[times] auto
+		[track-1-start] 1fr
+	    [track-1-end track-2-start] 1fr
+	    [track-2-end track-3-start] 1fr
+	    [track-3-end];
+}
+
+.time-slot {
+	grid-column: times;
+	padding-right: 0.25em;
+	text-align: right;
+	line-height: 1.2em;
+	margin-top: -0.75em; /* half of line-height */
+}
+
+.time-line {
+	height: 0;
+	border-top: 1px solid rgba(39, 41, 51, 0.15);
+	margin-top: -0.25em; /* halfway between grid's row gap */
+	grid-column: track-1-start / track-3-end;
+}
+
+.event-track-1 {
+	grid-column: track-1-start / track-1-end;
+}
+.event-track-2 {
+	grid-column: track-2-start / track-2-end;
+}
+.event-track-3 {
+	grid-column: track-3-start / track-3-end;
+}
+
+/*** Time classes ****/
+.event-start-time-1000 {
+	grid-row-start: time-1000;
+}
+.event-start-time-1030 {
+	grid-row-start: time-1030;
+}
+.event-start-time-1100 {
+	grid-row-start: time-1100;
+}
+.event-start-time-1130 {
+	grid-row-start: time-1130;
+}
+.event-start-time-1200 {
+	grid-row-start: time-1200;
+}
+.event-start-time-1230 {
+	grid-row-start: time-1230;
+}
+.event-start-time-1300 {
+	grid-row-start: time-1300;
+}
+.event-start-time-1330 {
+	grid-row-start: time-1330;
+}
+.event-start-time-1400 {
+	grid-row-start: time-1400;
+}
+.event-start-time-1430 {
+	grid-row-start: time-1430;
+}
+.event-start-time-1500 {
+	grid-row-start: time-1500;
+}
+.event-start-time-1530 {
+	grid-row-start: time-1530;
+}
+.event-start-time-1600 {
+	grid-row-start: time-1600;
+}
+.event-start-time-1630 {
+	grid-row-start: time-1630;
+}
+.event-start-time-1700 {
+	grid-row-start: time-1700;
+}
+.event-start-time-1730 {
+	grid-row-start: time-1730;
+}
+.event-start-time-1800 {
+	grid-row-start: time-1800;
+}
+.event-start-time-1830 {
+	grid-row-start: time-1830;
+}
+.event-start-time-1900 {
+	grid-row-start: time-1900;
+}
+
+.event-end-time-1000 {
+	grid-row-end: time-1000;
+}
+.event-end-time-1030 {
+	grid-row-end: time-1030;
+}
+.event-end-time-1100 {
+	grid-row-end: time-1100;
+}
+.event-end-time-1130 {
+	grid-row-end: time-1130;
+}
+.event-end-time-1200 {
+	grid-row-end: time-1200;
+}
+.event-end-time-1230 {
+	grid-row-end: time-1230;
+}
+.event-end-time-1300 {
+	grid-row-end: time-1300;
+}
+.event-end-time-1330 {
+	grid-row-end: time-1330;
+}
+.event-end-time-1400 {
+	grid-row-end: time-1400;
+}
+.event-end-time-1430 {
+	grid-row-end: time-1430;
+}
+.event-end-time-1500 {
+	grid-row-end: time-1500;
+}
+.event-end-time-1530 {
+	grid-row-end: time-1530;
+}
+.event-end-time-1600 {
+	grid-row-end: time-1600;
+}
+.event-end-time-1630 {
+	grid-row-end: time-1630;
+}
+.event-end-time-1700 {
+	grid-row-end: time-1700;
+}
+.event-end-time-1730 {
+	grid-row-end: time-1730;
+}
+.event-end-time-1800 {
+	grid-row-end: time-1800;
+}
+.event-end-time-1830 {
+	grid-row-end: time-1830;
+}
+.event-end-time-1900 {
+	grid-row-end: time-1900;
+}
+
+.event {
+	display: block;
+	background-color: rgba(250, 250, 250, 0.7);
+	padding: 0.5em;
+	/* margin: 0.5em 0.25em; */
+	z-index: 0;
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.event:hover {
+	background-color: rgba(250, 250, 250, 1);
+	color: #6f8d8e;
+}
+
+.event-contents {
+	position: sticky;
+	top: 0;
+	bottom: 0;
+}
+
+.event-title {
+	font-size: 1.2em;
+}
+
+/* #logo-810 {
+	width:
+} */
+
+/* small screen behavior */
+@media screen and (max-width: 719px) {
+	/* use multi-column schedule */
+	#schedule {
+		display: initial;
+	}
+
+	/* hide time dividers */
+	.time-line {
+		display: none;
+	}
+
+	.time-slot {
+		text-align: center;
+	}
+
+	.event,
+	.time-slot {
+		margin-top: 0.5em;
+	}
+}
