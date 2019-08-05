@@ -18,10 +18,10 @@
 		</div>
 		<div id="schedule-wrapper">
 			<h2>Schedule (work in progress!)</h2>
-			<p>All times are listed in <a>EDT (UTC−04:00)</a>.</p>
+			<p>Times are listed in <span id="time-zone">UTC</span>.</p>
 			<!-- schedule based on https://css-tricks.com/building-a-conference-schedule-with-css-grid/ -->
 			<div id="schedule">
-				<h3 class="time-slot"><time datetime="2019-08-10 10:00">10:00am</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T14:00Z">2:00pm</time></h3>
 				<div class="time-line event-start-time-1000 event-end-time-1000"></div>
 				<a href="https://facebook.com/BIONICLEsector01" class="event event-start-time-1000 event-end-time-1030 event-track-1">
 					<div class="event-contents">
@@ -43,11 +43,11 @@
 					</div>
 				</a>
 
-				<h3 class="time-slot"><time datetime="2019-08-10 10:30">10:30am</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T14:30Z">10:30am</time></h3>
 				<div class="time-line event-start-time-1030 event-end-time-1030"></div>
-				<h3 class="time-slot"><time datetime="2019-08-10 11:00">11:00am</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T15:00Z">11:00am</time></h3>
 				<div class="time-line event-start-time-1100 event-end-time-1100"></div>
-				<h3 class="time-slot"><time datetime="2019-08-10 11:30">11:30am</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T15:30Z">11:30am</time></h3>
 				<div class="time-line event-start-time-1130 event-end-time-1130"></div>
 
 				<a href="https://wallofhistory.andchill.tv/" class="event event-start-time-1130 event-end-time-1300 event-track-1">
@@ -70,11 +70,11 @@
 					</div>
 				</a>
 
-				<h3 class="time-slot"><time datetime="2019-08-10 12:00">12:00pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T16:00Z">12:00pm</time></h3>
 				<div class="time-line event-start-time-1200 event-end-time-1200"></div>
-				<h3 class="time-slot"><time datetime="2019-08-10 12:30">12:30pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T16:30Z">12:30pm</time></h3>
 				<div class="time-line event-start-time-1230 event-end-time-1230"></div>
-				<h3 class="time-slot"><time datetime="2019-08-10 13:00">1:00pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T17:00Z">1:00pm</time></h3>
 				<div class="time-line event-start-time-1300 event-end-time-1300"></div>
 				<a href="https://www.youtube.com/channel/UC45AarrRGbR1d1xl7BbGdJg" class="event event-start-time-1300 event-end-time-1600 event-track-1">
 					<div class="event-contents">
@@ -97,17 +97,17 @@
 						</div>
 					</div>
 				</a>
-				<h3 class="time-slot"><time datetime="2019-08-10 13:30">1:30pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T17:30Z">1:30pm</time></h3>
 				<div class="time-line event-start-time-1330 event-end-time-1330"></div>
-				<h3 class="time-slot"><time datetime="2019-08-10 14:00">2:00pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T18:00Z">2:00pm</time></h3>
 				<div class="time-line event-start-time-1400 event-end-time-1400"></div>
-				<h3 class="time-slot"><time datetime="2019-08-10 14:30">2:30pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T18:30Z">2:30pm</time></h3>
 				<div class="time-line event-start-time-1430 event-end-time-1430"></div>
-				<h3 class="time-slot"><time datetime="2019-08-10 15:00">3:00pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T19:00Z">3:00pm</time></h3>
 				<div class="time-line event-start-time-1500 event-end-time-1500"></div>
-				<h3 class="time-slot"><time datetime="2019-08-10 15:30">3:30pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T19:30Z">3:30pm</time></h3>
 				<div class="time-line event-start-time-1530 event-end-time-1530"></div>
-				<h3 class="time-slot"><time datetime="2019-08-10 16:00">4:00pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T20:00Z">4:00pm</time></h3>
 				<div class="time-line event-start-time-1600 event-end-time-1600"></div>
 				<a href="https://www.youtube.com/channel/UC45AarrRGbR1d1xl7BbGdJg" class="event event-start-time-1600 event-end-time-1900 event-track-1">
 					<div class="event-contents">
@@ -132,7 +132,7 @@
 
 				<a class="event event-start-time-1600 event-end-time-1700 event-track-3">
 					<div class="event-contents">
-						<h4 class="event-title">The Legend of Mata Nui REBUILT Release</h4>
+						<h4 class="event-title"><i>The Legend of Mata Nui REBUILT</i> Release</h4>
 						<span class="event-time">60 mins during 4:00pm-7:00pm (exact time TBD)</span>
 						<div class="event-description">
 							Try out the long-awaited <i>BIONICLE: The Legend of Mata Nui REBUILT</i>.
@@ -140,7 +140,7 @@
 					</div>
 				</a>
 
-				<h3 class="time-slot"><time datetime="2019-08-10 16:30">4:30pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T20:30Z">4:30pm</time></h3>
 				<div class="time-line event-start-time-1630 event-end-time-1630"></div>
 
 				<a class="event event-start-time-1630 event-end-time-1700 event-track-2">
@@ -153,7 +153,7 @@
 					</div>
 				</a>
 
-				<h3 class="time-slot"><time datetime="2019-08-10 17:00">5:00pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T21:00Z">5:00pm</time></h3>
 				<div class="time-line event-start-time-1700 event-end-time-1700"></div>
 
 				<a class="event event-start-time-1700 event-end-time-1730 event-track-2">
@@ -166,7 +166,7 @@
 					</div>
 				</a>
 
-				<h3 class="time-slot"><time datetime="2019-08-10 17:30">5:30pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T21:30Z">5:30pm</time></h3>
 				<div class="time-line event-start-time-1730 event-end-time-1730"></div>
 
 				<a class="event event-start-time-1730 event-end-time-1800 event-track-2">
@@ -179,13 +179,30 @@
 					</div>
 				</a>
 
-				<h3 class="time-slot"><time datetime="2019-08-10 18:00">6:00pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T22:00Z">6:00pm</time></h3>
 				<div class="time-line event-start-time-1800 event-end-time-1800"></div>
-				<h3 class="time-slot"><time datetime="2019-08-10 18:30">6:30pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T22:30Z">6:30pm</time></h3>
 				<div class="time-line event-start-time-1830 event-end-time-1830"></div>
-				<h3 class="time-slot"><time datetime="2019-08-10 19:00">7:00pm</time></h3>
+				<h3 class="time-slot"><time datetime="2019-08-10T23:00Z">7:00pm</time></h3>
 				<div class="time-line event-start-time-1900 event-end-time-1900"></div>
 			</div>
 		</div>
+
+		<script>
+				let timeTags = document.getElementsByTagName("time");
+
+				// update each time to match local time zone
+				for (let timeTag of timeTags) {
+					let timeUTC = new Date(timeTag.getAttribute("datetime"));
+					timeTag.innerText = timeUTC.toLocaleDateString("en-US",
+						{ hour: "numeric", minute: "numeric" });
+				}
+
+				// update the time zone name listed at the top of the schedule
+				const timeZoneLocation = Intl.DateTimeFormat().resolvedOptions().timeZone;
+				const timeZoneOffset = -(new Date()).getTimezoneOffset() / 60;
+				document.getElementById("time-zone").innerText = "your device's time zone ("
+					+ timeZoneLocation + "; UTC" + (timeZoneOffset < 0 ? "" : "+") + timeZoneOffset + ")";
+		</script>
 	</body>
 </html>
