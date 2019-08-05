@@ -190,12 +190,28 @@
 
 		<script>
 				let timeTags = document.getElementsByTagName("time");
+				let prevDay = 0;  // day of the prior time-slot
 
 				// update each time to match local time zone
+				let timeUTC = null;
+				let timeSlotText = "";
 				for (let timeTag of timeTags) {
-					let timeUTC = new Date(timeTag.getAttribute("datetime"));
-					timeTag.innerText = timeUTC.toLocaleDateString("en-US",
-						{ hour: "numeric", minute: "numeric" });
+					timeUTC = new Date(timeTag.getAttribute("datetime"));
+					timeSlotText = "";
+
+					// only list the date in the time-slot if this is the first
+					// time-slot with that date
+					if (timeUTC.getDay() != prevDay) {
+						timeSlotText = timeUTC.toLocaleDateString("en-US",
+							{ hour: "numeric", minute: "numeric" });
+						prevDay = timeUTC.getDay();
+					} else {
+						timeSlotText = timeUTC.toLocaleString("en-US",
+							{ hour: "numeric", minute: "numeric" });
+					}
+					timeTag.innerText = timeSlotText;
+
+
 				}
 
 				// update the time zone name listed at the top of the schedule
