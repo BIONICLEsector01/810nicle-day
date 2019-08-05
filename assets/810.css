@@ -102,7 +102,8 @@ h1, h2, h3, h4, h5, h6 {
 		[time-2130] 1fr
 		[time-2200] 1fr
 		[time-2230] 1fr
-		[time-2300] 1fr;
+		[time-2300] 1fr
+		[time-2330] 1fr;
 	grid-template-columns:
 		[times] auto
 		[track-1-start] 1fr
@@ -134,6 +135,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .event-track-3 {
 	grid-column: track-3-start / track-3-end;
+}
+.event-track-1.event-track-2 {
+	grid-column: track-1-start / track-2-end;
+}
+.event-track-2.event-track-3 {
+	grid-column: track-2-start / track-3-end;
+}
+.event-track-1.event-track-2.event-track-3 {
+	grid-column: track-1-start / track-3-end;
 }
 
 /*** Time classes ****/
@@ -194,6 +204,10 @@ h1, h2, h3, h4, h5, h6 {
 .event-start-time-2300 {
 	grid-row-start: time-2300;
 }
+.event-start-time-2330 {
+	grid-row-start: time-2330;
+}
+
 
 .event-end-time-1400 {
 	grid-row-end: time-1400;
@@ -252,6 +266,9 @@ h1, h2, h3, h4, h5, h6 {
 .event-end-time-2300 {
 	grid-row-end: time-2300;
 }
+.event-end-time-2330 {
+	grid-row-end: time-2330;
+}
 
 .event {
 	display: block;
@@ -261,6 +278,11 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 0;
 	color: inherit;
 	text-decoration: inherit;
+}
+
+.subevent {
+	margin: 0.25em;
+	background: #00ff00;
 }
 
 .event[href]:hover {
