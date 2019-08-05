@@ -222,35 +222,35 @@
 		</div>
 
 		<script>
-				let timeTags = document.getElementsByTagName("time");
-				let prevDay = 0;  // day of the prior time-slot
+			let timeTags = document.getElementsByTagName("time");
+			let prevDay = 0;  // day of the prior time-slot
 
-				// update each time to match local time zone
-				let timeUTC = null;
-				let timeSlotText = "";
-				for (let timeTag of timeTags) {
-					timeUTC = new Date(timeTag.getAttribute("datetime"));
+			// update each time to match local time zone
+			let timeUTC = null;
+			let timeSlotText = "";
+			for (let timeTag of timeTags) {
+				timeUTC = new Date(timeTag.getAttribute("datetime"));
 
-					// only list the date if this is a time-slot and the first
-					// time-slot with that date
-					if (timeUTC.getDay() != prevDay && timeTag.className == "time-slot-time") {
-						timeSlotText = timeUTC.toLocaleDateString("en-US",
-							{ hour: "numeric", minute: "numeric" });
-						prevDay = timeUTC.getDay();
-					} else {
-						timeSlotText = timeUTC.toLocaleString("en-US",
-							{ hour: "numeric", minute: "numeric" });
-					}
-					timeTag.innerText = timeSlotText;
-
-
+				// only list the date if this is a time-slot and the first
+				// time-slot with that date
+				if (timeUTC.getDay() != prevDay && timeTag.className == "time-slot-time") {
+					timeSlotText = timeUTC.toLocaleDateString("en-US",
+						{ hour: "numeric", minute: "numeric" });
+					prevDay = timeUTC.getDay();
+				} else {
+					timeSlotText = timeUTC.toLocaleString("en-US",
+						{ hour: "numeric", minute: "numeric" });
 				}
+				timeTag.innerText = timeSlotText;
 
-				// update the time zone name listed at the top of the schedule
-				const timeZoneLocation = Intl.DateTimeFormat().resolvedOptions().timeZone;
-				const timeZoneOffset = -(new Date()).getTimezoneOffset() / 60;
-				document.getElementById("time-zone").innerText = "your device's time zone ("
-					+ timeZoneLocation + "; UTC" + (timeZoneOffset < 0 ? "" : "+") + timeZoneOffset + ")";
+
+			}
+
+			// update the time zone name listed at the top of the schedule
+			const timeZoneLocation = Intl.DateTimeFormat().resolvedOptions().timeZone;
+			const timeZoneOffset = -(new Date()).getTimezoneOffset() / 60;
+			document.getElementById("time-zone").innerText = "your device's time zone ("
+				+ timeZoneLocation + "; UTC" + (timeZoneOffset < 0 ? "" : "+") + timeZoneOffset + ")";
 		</script>
 	</body>
 </html>

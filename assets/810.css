@@ -148,6 +148,8 @@ h1, h2, h3, h4, h5, h6 {
 	height: 0;
 	border-top: 1px solid rgba(39, 41, 51, 0.15);
 	margin-top: -0.25em; /* halfway between grid's row gap */
+	margin-left: -0.15em;
+	margin-right: -0.15em;
 	grid-column: track-1-start / track-2-end;
 }
 
