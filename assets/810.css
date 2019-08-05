@@ -25,12 +25,12 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "Franklin Gothic Book";
-  src: local("Franklin Gothic Book"),
-       url("biosector01.com/resources/fonts/franklingothic-book-webfont.woff2") format("woff2"),
-       url("biosector01.com/resources/fonts/franklingothic-book-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Franklin Gothic Book";
+	src: local("Franklin Gothic Book"),
+		url("biosector01.com/resources/fonts/franklingothic-book-webfont.woff2") format("woff2"),
+		url("biosector01.com/resources/fonts/franklingothic-book-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
@@ -282,13 +282,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .event[href] .event-title::after {
-    content: '';
-    display: inline-block;
-    width: 0.75em;
-    height: 0.75em;
-    margin-left: 0.25em;
-    background: url(font-awesome-5.6.0-external-link-square-alt.svg) center left no-repeat;
-    background-size: contain;
+	content: '';
+	display: inline-block;
+	width: 0.75em;
+	height: 0.75em;
+	margin-left: 0.25em;
+	background: url(font-awesome-5.6.0-external-link-square-alt.svg) center left no-repeat;
+	background-size: contain;
+}
+
+.event-warning {
+	color: #ff0000;
+}
+
+.event-warning::before {
+	content: '';
+	display: inline-block;
+	width: 0.75em;
+	height: 0.75em;
+	margin-right: 0.25em;
+	background: url(font-awesome-5.6.0-exclamation-circle.svg) center left no-repeat;
+	background-size: contain;
 }
 
 /* #logo-810 {
