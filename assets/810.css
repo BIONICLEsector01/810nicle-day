@@ -108,8 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 		[times] auto
 		[track-1-start] 1fr
 	    [track-1-end track-2-start] 1fr
-	    [track-2-end track-3-start] 1fr
-	    [track-3-end];
+		[track-2-end];
 }
 
 .time-slot {
@@ -124,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 	height: 0;
 	border-top: 1px solid rgba(39, 41, 51, 0.15);
 	margin-top: -0.25em; /* halfway between grid's row gap */
-	grid-column: track-1-start / track-3-end;
+	grid-column: track-1-start / track-2-end;
 }
 
 .event-track-1 {
@@ -133,17 +132,8 @@ h1, h2, h3, h4, h5, h6 {
 .event-track-2 {
 	grid-column: track-2-start / track-2-end;
 }
-.event-track-3 {
-	grid-column: track-3-start / track-3-end;
-}
 .event-track-1.event-track-2 {
 	grid-column: track-1-start / track-2-end;
-}
-.event-track-2.event-track-3 {
-	grid-column: track-2-start / track-3-end;
-}
-.event-track-1.event-track-2.event-track-3 {
-	grid-column: track-1-start / track-3-end;
 }
 
 /*** Time classes ****/
