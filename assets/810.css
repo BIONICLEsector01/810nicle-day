@@ -109,26 +109,102 @@ h1, h2, h3, h4, h5, h6 {
 	grid-gap: 0.5em;
 	gap: 0.5em;
 	grid-template-rows:
-		[time-1400] 1fr
-		[time-1430] 1fr
-		[time-1500] 1fr
-		[time-1530] 1fr
-		[time-1600] 1fr
-		[time-1630] 1fr
-		[time-1700] 1fr
-		[time-1730] 1fr
-		[time-1800] 1fr
-		[time-1830] 1fr
-		[time-1900] 1fr
-		[time-1930] 1fr
-		[time-2000] 1fr
-		[time-2030] 1fr
-		[time-2100] 1fr
-		[time-2130] 1fr
-		[time-2200] 1fr
-		[time-2230] 1fr
-		[time-2300] 1fr
-		[time-2330] 1fr;
+		/* [day-1-time-0000] 1fr
+		[day-1-time-0030] 1fr
+		[day-1-time-0100] 1fr
+		[day-1-time-0130] 1fr
+		[day-1-time-0200] 1fr
+		[day-1-time-0230] 1fr
+		[day-1-time-0300] 1fr
+		[day-1-time-0330] 1fr
+		[day-1-time-0400] 1fr
+		[day-1-time-0430] 1fr
+		[day-1-time-0500] 1fr
+		[day-1-time-0530] 1fr
+		[day-1-time-0600] 1fr
+		[day-1-time-0630] 1fr
+		[day-1-time-0700] 1fr
+		[day-1-time-0730] 1fr
+		[day-1-time-0800] 1fr
+		[day-1-time-0830] 1fr
+		[day-1-time-0900] 1fr
+		[day-1-time-0930] 1fr
+		[day-1-time-1000] 1fr
+		[day-1-time-1030] 1fr
+		[day-1-time-1100] 1fr
+		[day-1-time-1130] 1fr
+		[day-1-time-1200] 1fr
+		[day-1-time-1230] 1fr
+		[day-1-time-1300] 1fr
+		[day-1-time-1330] 1fr */
+		[day-1-time-1400] 1fr
+		[day-1-time-1430] 1fr
+		[day-1-time-1500] 1fr
+		[day-1-time-1530] 1fr
+		[day-1-time-1600] 1fr
+		[day-1-time-1630] 1fr
+		[day-1-time-1700] 1fr
+		[day-1-time-1730] 1fr
+		[day-1-time-1800] 1fr
+		[day-1-time-1830] 1fr
+		[day-1-time-1900] 1fr
+		[day-1-time-1930] 1fr
+		[day-1-time-2000] 1fr
+		[day-1-time-2030] 1fr
+		[day-1-time-2100] 1fr
+		[day-1-time-2130] 1fr
+		[day-1-time-2200] 1fr
+		[day-1-time-2230] 1fr
+		[day-1-time-2300] 1fr
+		[day-1-time-2330] 1fr
+		[day-2-time-0000] 1fr
+		[day-2-time-0030] 1fr
+		[day-2-time-0100] 1fr
+		[day-2-time-0130] 1fr
+		[day-2-time-0200] 1fr
+		[day-2-time-0230] 1fr
+		[day-2-time-0300] 1fr
+		[day-2-time-0330] 1fr
+		[day-2-time-0400] 1fr
+		/* [day-2-time-0430] 1fr
+		[day-2-time-0500] 1fr
+		[day-2-time-0530] 1fr
+		[day-2-time-0600] 1fr
+		[day-2-time-0630] 1fr
+		[day-2-time-0700] 1fr
+		[day-2-time-0730] 1fr
+		[day-2-time-0800] 1fr
+		[day-2-time-0830] 1fr
+		[day-2-time-0900] 1fr
+		[day-2-time-0930] 1fr
+		[day-2-time-1000] 1fr
+		[day-2-time-1030] 1fr
+		[day-2-time-1100] 1fr
+		[day-2-time-1130] 1fr
+		[day-2-time-1200] 1fr
+		[day-2-time-1230] 1fr
+		[day-2-time-1300] 1fr
+		[day-2-time-1330] 1fr
+		[day-2-time-1400] 1fr
+		[day-2-time-1430] 1fr
+		[day-2-time-1500] 1fr
+		[day-2-time-1530] 1fr
+		[day-2-time-1600] 1fr
+		[day-2-time-1630] 1fr
+		[day-2-time-1700] 1fr
+		[day-2-time-1730] 1fr
+		[day-2-time-1800] 1fr
+		[day-2-time-1830] 1fr
+		[day-2-time-1900] 1fr
+		[day-2-time-1930] 1fr
+		[day-2-time-2000] 1fr
+		[day-2-time-2030] 1fr
+		[day-2-time-2100] 1fr
+		[day-2-time-2130] 1fr
+		[day-2-time-2200] 1fr
+		[day-2-time-2230] 1fr
+		[day-2-time-2300] 1fr
+		[day-2-time-2330] 1fr */ ;
 	grid-template-columns:
 		[times] auto
 		[track-1-start] 1fr
@@ -142,6 +218,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: right;
 	line-height: 1.2em;
 	margin-top: -0.75em; /* half of line-height */
+	height: 5em;
 }
 
 .time-line {
@@ -164,127 +241,557 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*** Time classes ****/
-.event-start-time-1400 {
-	grid-row-start: time-1400;
+.event-start-day-1-time-0000 {
+	grid-row-start: day-1-time-0000;
 }
-.event-start-time-1430 {
-	grid-row-start: time-1430;
+.event-start-day-1-time-0030 {
+	grid-row-start: day-1-time-0030;
 }
-.event-start-time-1500 {
-	grid-row-start: time-1500;
+.event-start-day-1-time-0100 {
+	grid-row-start: day-1-time-0100;
 }
-.event-start-time-1530 {
-	grid-row-start: time-1530;
+.event-start-day-1-time-0130 {
+	grid-row-start: day-1-time-0130;
 }
-.event-start-time-1600 {
-	grid-row-start: time-1600;
+.event-start-day-1-time-0200 {
+	grid-row-start: day-1-time-0200;
 }
-.event-start-time-1630 {
-	grid-row-start: time-1630;
+.event-start-day-1-time-0230 {
+	grid-row-start: day-1-time-0230;
 }
-.event-start-time-1700 {
-	grid-row-start: time-1700;
+.event-start-day-1-time-0300 {
+	grid-row-start: day-1-time-0300;
 }
-.event-start-time-1730 {
-	grid-row-start: time-1730;
+.event-start-day-1-time-0330 {
+	grid-row-start: day-1-time-0330;
 }
-.event-start-time-1800 {
-	grid-row-start: time-1800;
+.event-start-day-1-time-0400 {
+	grid-row-start: day-1-time-0400;
 }
-.event-start-time-1830 {
-	grid-row-start: time-1830;
+.event-start-day-1-time-0430 {
+	grid-row-start: day-1-time-0430;
 }
-.event-start-time-1900 {
-	grid-row-start: time-1900;
+.event-start-day-1-time-0500 {
+	grid-row-start: day-1-time-0500;
 }
-.event-start-time-1930 {
-	grid-row-start: time-1930;
+.event-start-day-1-time-0530 {
+	grid-row-start: day-1-time-0530;
 }
-.event-start-time-2000 {
-	grid-row-start: time-2000;
+.event-start-day-1-time-0600 {
+	grid-row-start: day-1-time-0600;
 }
-.event-start-time-2030 {
-	grid-row-start: time-2030;
+.event-start-day-1-time-0630 {
+	grid-row-start: day-1-time-0630;
 }
-.event-start-time-2100 {
-	grid-row-start: time-2100;
+.event-start-day-1-time-0700 {
+	grid-row-start: day-1-time-0700;
 }
-.event-start-time-2130 {
-	grid-row-start: time-2130;
+.event-start-day-1-time-0730 {
+	grid-row-start: day-1-time-0730;
 }
-.event-start-time-2200 {
-	grid-row-start: time-2200;
+.event-start-day-1-time-0800 {
+	grid-row-start: day-1-time-0800;
 }
-.event-start-time-2230 {
-	grid-row-start: time-2230;
+.event-start-day-1-time-0830 {
+	grid-row-start: day-1-time-0830;
 }
-.event-start-time-2300 {
-	grid-row-start: time-2300;
+.event-start-day-1-time-0900 {
+	grid-row-start: day-1-time-0900;
 }
-.event-start-time-2330 {
-	grid-row-start: time-2330;
+.event-start-day-1-time-1030 {
+	grid-row-start: day-1-time-1030;
 }
-
-
-.event-end-time-1400 {
-	grid-row-end: time-1400;
+.event-start-day-1-time-1100 {
+	grid-row-start: day-1-time-1100;
 }
-.event-end-time-1430 {
-	grid-row-end: time-1430;
+.event-start-day-1-time-1130 {
+	grid-row-start: day-1-time-1130;
 }
-.event-end-time-1500 {
-	grid-row-end: time-1500;
+.event-start-day-1-time-1200 {
+	grid-row-start: day-1-time-1200;
 }
-.event-end-time-1530 {
-	grid-row-end: time-1530;
+.event-start-day-1-time-1230 {
+	grid-row-start: day-1-time-1230;
 }
-.event-end-time-1600 {
-	grid-row-end: time-1600;
+.event-start-day-1-time-1300 {
+	grid-row-start: day-1-time-1300;
 }
-.event-end-time-1630 {
-	grid-row-end: time-1630;
+.event-start-day-1-time-1330 {
+	grid-row-start: day-1-time-1330;
 }
-.event-end-time-1700 {
-	grid-row-end: time-1700;
+.event-start-day-1-time-1400 {
+	grid-row-start: day-1-time-1400;
 }
-.event-end-time-1730 {
-	grid-row-end: time-1730;
+.event-start-day-1-time-1430 {
+	grid-row-start: day-1-time-1430;
 }
-.event-end-time-1800 {
-	grid-row-end: time-1800;
+.event-start-day-1-time-1500 {
+	grid-row-start: day-1-time-1500;
 }
-.event-end-time-1830 {
-	grid-row-end: time-1830;
+.event-start-day-1-time-1530 {
+	grid-row-start: day-1-time-1530;
 }
-.event-end-time-1900 {
-	grid-row-end: time-1900;
+.event-start-day-1-time-1600 {
+	grid-row-start: day-1-time-1600;
 }
-.event-end-time-1930 {
-	grid-row-end: time-1930;
+.event-start-day-1-time-1630 {
+	grid-row-start: day-1-time-1630;
 }
-.event-end-time-2000 {
-	grid-row-end: time-2000;
+.event-start-day-1-time-1700 {
+	grid-row-start: day-1-time-1700;
 }
-.event-end-time-2030 {
-	grid-row-end: time-2030;
+.event-start-day-1-time-1730 {
+	grid-row-start: day-1-time-1730;
 }
-.event-end-time-2100 {
-	grid-row-end: time-2100;
+.event-start-day-1-time-1800 {
+	grid-row-start: day-1-time-1800;
 }
-.event-end-time-2130 {
-	grid-row-end: time-2130;
+.event-start-day-1-time-1830 {
+	grid-row-start: day-1-time-1830;
 }
-.event-end-time-2200 {
-	grid-row-end: time-2200;
+.event-start-day-1-time-1900 {
+	grid-row-start: day-1-time-1900;
 }
-.event-end-time-2230 {
-	grid-row-end: time-2230;
+.event-start-day-1-time-1930 {
+	grid-row-start: day-1-time-1930;
 }
-.event-end-time-2300 {
-	grid-row-end: time-2300;
+.event-start-day-1-time-2000 {
+	grid-row-start: day-1-time-2000;
 }
-.event-end-time-2330 {
-	grid-row-end: time-2330;
+.event-start-day-1-time-2030 {
+	grid-row-start: day-1-time-2030;
+}
+.event-start-day-1-time-2100 {
+	grid-row-start: day-1-time-2100;
+}
+.event-start-day-1-time-2130 {
+	grid-row-start: day-1-time-2130;
+}
+.event-start-day-1-time-2200 {
+	grid-row-start: day-1-time-2200;
+}
+.event-start-day-1-time-2230 {
+	grid-row-start: day-1-time-2230;
+}
+.event-start-day-1-time-2300 {
+	grid-row-start: day-1-time-2300;
+}
+.event-start-day-1-time-2330 {
+	grid-row-start: day-1-time-2330;
+}
+.event-end-day-1-time-0000 {
+	grid-row-end: day-1-time-0000;
+}
+.event-end-day-1-time-0030 {
+	grid-row-end: day-1-time-0030;
+}
+.event-end-day-1-time-0100 {
+	grid-row-end: day-1-time-0100;
+}
+.event-end-day-1-time-0130 {
+	grid-row-end: day-1-time-0130;
+}
+.event-end-day-1-time-0200 {
+	grid-row-end: day-1-time-0200;
+}
+.event-end-day-1-time-0230 {
+	grid-row-end: day-1-time-0230;
+}
+.event-end-day-1-time-0300 {
+	grid-row-end: day-1-time-0300;
+}
+.event-end-day-1-time-0330 {
+	grid-row-end: day-1-time-0330;
+}
+.event-end-day-1-time-0400 {
+	grid-row-end: day-1-time-0400;
+}
+.event-end-day-1-time-0430 {
+	grid-row-end: day-1-time-0430;
+}
+.event-end-day-1-time-0500 {
+	grid-row-end: day-1-time-0500;
+}
+.event-end-day-1-time-0530 {
+	grid-row-end: day-1-time-0530;
+}
+.event-end-day-1-time-0600 {
+	grid-row-end: day-1-time-0600;
+}
+.event-end-day-1-time-0630 {
+	grid-row-end: day-1-time-0630;
+}
+.event-end-day-1-time-0700 {
+	grid-row-end: day-1-time-0700;
+}
+.event-end-day-1-time-0730 {
+	grid-row-end: day-1-time-0730;
+}
+.event-end-day-1-time-0800 {
+	grid-row-end: day-1-time-0800;
+}
+.event-end-day-1-time-0830 {
+	grid-row-end: day-1-time-0830;
+}
+.event-end-day-1-time-0900 {
+	grid-row-end: day-1-time-0900;
+}
+.event-end-day-1-time-1030 {
+	grid-row-end: day-1-time-1030;
+}
+.event-end-day-1-time-1100 {
+	grid-row-end: day-1-time-1100;
+}
+.event-end-day-1-time-1130 {
+	grid-row-end: day-1-time-1130;
+}
+.event-end-day-1-time-1200 {
+	grid-row-end: day-1-time-1200;
+}
+.event-end-day-1-time-1230 {
+	grid-row-end: day-1-time-1230;
+}
+.event-end-day-1-time-1300 {
+	grid-row-end: day-1-time-1300;
+}
+.event-end-day-1-time-1330 {
+	grid-row-end: day-1-time-1330;
+}
+.event-end-day-1-time-1400 {
+	grid-row-end: day-1-time-1400;
+}
+.event-end-day-1-time-1430 {
+	grid-row-end: day-1-time-1430;
+}
+.event-end-day-1-time-1500 {
+	grid-row-end: day-1-time-1500;
+}
+.event-end-day-1-time-1530 {
+	grid-row-end: day-1-time-1530;
+}
+.event-end-day-1-time-1600 {
+	grid-row-end: day-1-time-1600;
+}
+.event-end-day-1-time-1630 {
+	grid-row-end: day-1-time-1630;
+}
+.event-end-day-1-time-1700 {
+	grid-row-end: day-1-time-1700;
+}
+.event-end-day-1-time-1730 {
+	grid-row-end: day-1-time-1730;
+}
+.event-end-day-1-time-1800 {
+	grid-row-end: day-1-time-1800;
+}
+.event-end-day-1-time-1830 {
+	grid-row-end: day-1-time-1830;
+}
+.event-end-day-1-time-1900 {
+	grid-row-end: day-1-time-1900;
+}
+.event-end-day-1-time-1930 {
+	grid-row-end: day-1-time-1930;
+}
+.event-end-day-1-time-2000 {
+	grid-row-end: day-1-time-2000;
+}
+.event-end-day-1-time-2030 {
+	grid-row-end: day-1-time-2030;
+}
+.event-end-day-1-time-2100 {
+	grid-row-end: day-1-time-2100;
+}
+.event-end-day-1-time-2130 {
+	grid-row-end: day-1-time-2130;
+}
+.event-end-day-1-time-2200 {
+	grid-row-end: day-1-time-2200;
+}
+.event-end-day-1-time-2230 {
+	grid-row-end: day-1-time-2230;
+}
+.event-end-day-1-time-2300 {
+	grid-row-end: day-1-time-2300;
+}
+.event-end-day-1-time-2330 {
+	grid-row-end: day-1-time-2330;
+}
+.event-start-day-2-time-0000 {
+	grid-row-start: day-2-time-0000;
+}
+.event-start-day-2-time-0030 {
+	grid-row-start: day-2-time-0030;
+}
+.event-start-day-2-time-0100 {
+	grid-row-start: day-2-time-0100;
+}
+.event-start-day-2-time-0130 {
+	grid-row-start: day-2-time-0130;
+}
+.event-start-day-2-time-0200 {
+	grid-row-start: day-2-time-0200;
+}
+.event-start-day-2-time-0230 {
+	grid-row-start: day-2-time-0230;
+}
+.event-start-day-2-time-0300 {
+	grid-row-start: day-2-time-0300;
+}
+.event-start-day-2-time-0330 {
+	grid-row-start: day-2-time-0330;
+}
+.event-start-day-2-time-0400 {
+	grid-row-start: day-2-time-0400;
+}
+.event-start-day-2-time-0430 {
+	grid-row-start: day-2-time-0430;
+}
+.event-start-day-2-time-0500 {
+	grid-row-start: day-2-time-0500;
+}
+.event-start-day-2-time-0530 {
+	grid-row-start: day-2-time-0530;
+}
+.event-start-day-2-time-0600 {
+	grid-row-start: day-2-time-0600;
+}
+.event-start-day-2-time-0630 {
+	grid-row-start: day-2-time-0630;
+}
+.event-start-day-2-time-0700 {
+	grid-row-start: day-2-time-0700;
+}
+.event-start-day-2-time-0730 {
+	grid-row-start: day-2-time-0730;
+}
+.event-start-day-2-time-0800 {
+	grid-row-start: day-2-time-0800;
+}
+.event-start-day-2-time-0830 {
+	grid-row-start: day-2-time-0830;
+}
+.event-start-day-2-time-0900 {
+	grid-row-start: day-2-time-0900;
+}
+.event-start-day-2-time-1030 {
+	grid-row-start: day-2-time-1030;
+}
+.event-start-day-2-time-1100 {
+	grid-row-start: day-2-time-1100;
+}
+.event-start-day-2-time-1130 {
+	grid-row-start: day-2-time-1130;
+}
+.event-start-day-2-time-1200 {
+	grid-row-start: day-2-time-1200;
+}
+.event-start-day-2-time-1230 {
+	grid-row-start: day-2-time-1230;
+}
+.event-start-day-2-time-1300 {
+	grid-row-start: day-2-time-1300;
+}
+.event-start-day-2-time-1330 {
+	grid-row-start: day-2-time-1330;
+}
+.event-start-day-2-time-1400 {
+	grid-row-start: day-2-time-1400;
+}
+.event-start-day-2-time-1430 {
+	grid-row-start: day-2-time-1430;
+}
+.event-start-day-2-time-1500 {
+	grid-row-start: day-2-time-1500;
+}
+.event-start-day-2-time-1530 {
+	grid-row-start: day-2-time-1530;
+}
+.event-start-day-2-time-1600 {
+	grid-row-start: day-2-time-1600;
+}
+.event-start-day-2-time-1630 {
+	grid-row-start: day-2-time-1630;
+}
+.event-start-day-2-time-1700 {
+	grid-row-start: day-2-time-1700;
+}
+.event-start-day-2-time-1730 {
+	grid-row-start: day-2-time-1730;
+}
+.event-start-day-2-time-1800 {
+	grid-row-start: day-2-time-1800;
+}
+.event-start-day-2-time-1830 {
+	grid-row-start: day-2-time-1830;
+}
+.event-start-day-2-time-1900 {
+	grid-row-start: day-2-time-1900;
+}
+.event-start-day-2-time-1930 {
+	grid-row-start: day-2-time-1930;
+}
+.event-start-day-2-time-2000 {
+	grid-row-start: day-2-time-2000;
+}
+.event-start-day-2-time-2030 {
+	grid-row-start: day-2-time-2030;
+}
+.event-start-day-2-time-2100 {
+	grid-row-start: day-2-time-2100;
+}
+.event-start-day-2-time-2130 {
+	grid-row-start: day-2-time-2130;
+}
+.event-start-day-2-time-2200 {
+	grid-row-start: day-2-time-2200;
+}
+.event-start-day-2-time-2230 {
+	grid-row-start: day-2-time-2230;
+}
+.event-start-day-2-time-2300 {
+	grid-row-start: day-2-time-2300;
+}
+.event-start-day-2-time-2330 {
+	grid-row-start: day-2-time-2330;
+}
+.event-end-day-2-time-0000 {
+	grid-row-end: day-2-time-0000;
+}
+.event-end-day-2-time-0030 {
+	grid-row-end: day-2-time-0030;
+}
+.event-end-day-2-time-0100 {
+	grid-row-end: day-2-time-0100;
+}
+.event-end-day-2-time-0130 {
+	grid-row-end: day-2-time-0130;
+}
+.event-end-day-2-time-0200 {
+	grid-row-end: day-2-time-0200;
+}
+.event-end-day-2-time-0230 {
+	grid-row-end: day-2-time-0230;
+}
+.event-end-day-2-time-0300 {
+	grid-row-end: day-2-time-0300;
+}
+.event-end-day-2-time-0330 {
+	grid-row-end: day-2-time-0330;
+}
+.event-end-day-2-time-0400 {
+	grid-row-end: day-2-time-0400;
+}
+.event-end-day-2-time-0430 {
+	grid-row-end: day-2-time-0430;
+}
+.event-end-day-2-time-0500 {
+	grid-row-end: day-2-time-0500;
+}
+.event-end-day-2-time-0530 {
+	grid-row-end: day-2-time-0530;
+}
+.event-end-day-2-time-0600 {
+	grid-row-end: day-2-time-0600;
+}
+.event-end-day-2-time-0630 {
+	grid-row-end: day-2-time-0630;
+}
+.event-end-day-2-time-0700 {
+	grid-row-end: day-2-time-0700;
+}
+.event-end-day-2-time-0730 {
+	grid-row-end: day-2-time-0730;
+}
+.event-end-day-2-time-0800 {
+	grid-row-end: day-2-time-0800;
+}
+.event-end-day-2-time-0830 {
+	grid-row-end: day-2-time-0830;
+}
+.event-end-day-2-time-0900 {
+	grid-row-end: day-2-time-0900;
+}
+.event-end-day-2-time-1030 {
+	grid-row-end: day-2-time-1030;
+}
+.event-end-day-2-time-1100 {
+	grid-row-end: day-2-time-1100;
+}
+.event-end-day-2-time-1130 {
+	grid-row-end: day-2-time-1130;
+}
+.event-end-day-2-time-1200 {
+	grid-row-end: day-2-time-1200;
+}
+.event-end-day-2-time-1230 {
+	grid-row-end: day-2-time-1230;
+}
+.event-end-day-2-time-1300 {
+	grid-row-end: day-2-time-1300;
+}
+.event-end-day-2-time-1330 {
+	grid-row-end: day-2-time-1330;
+}
+.event-end-day-2-time-1400 {
+	grid-row-end: day-2-time-1400;
+}
+.event-end-day-2-time-1430 {
+	grid-row-end: day-2-time-1430;
+}
+.event-end-day-2-time-1500 {
+	grid-row-end: day-2-time-1500;
+}
+.event-end-day-2-time-1530 {
+	grid-row-end: day-2-time-1530;
+}
+.event-end-day-2-time-1600 {
+	grid-row-end: day-2-time-1600;
+}
+.event-end-day-2-time-1630 {
+	grid-row-end: day-2-time-1630;
+}
+.event-end-day-2-time-1700 {
+	grid-row-end: day-2-time-1700;
+}
+.event-end-day-2-time-1730 {
+	grid-row-end: day-2-time-1730;
+}
+.event-end-day-2-time-1800 {
+	grid-row-end: day-2-time-1800;
+}
+.event-end-day-2-time-1830 {
+	grid-row-end: day-2-time-1830;
+}
+.event-end-day-2-time-1900 {
+	grid-row-end: day-2-time-1900;
+}
+.event-end-day-2-time-1930 {
+	grid-row-end: day-2-time-1930;
+}
+.event-end-day-2-time-2000 {
+	grid-row-end: day-2-time-2000;
+}
+.event-end-day-2-time-2030 {
+	grid-row-end: day-2-time-2030;
+}
+.event-end-day-2-time-2100 {
+	grid-row-end: day-2-time-2100;
+}
+.event-end-day-2-time-2130 {
+	grid-row-end: day-2-time-2130;
+}
+.event-end-day-2-time-2200 {
+	grid-row-end: day-2-time-2200;
+}
+.event-end-day-2-time-2230 {
+	grid-row-end: day-2-time-2230;
+}
+.event-end-day-2-time-2300 {
+	grid-row-end: day-2-time-2300;
+}
+.event-end-day-2-time-2330 {
+	grid-row-end: day-2-time-2330;
 }
 
 .event {
